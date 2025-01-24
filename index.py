@@ -16,6 +16,10 @@ struggle_mapping = {
     'Building interesting project': 9
 }
 
+gamefication = {
+    
+}
+
 
 data["Struggle_encoded"] = data["Struggle"].map(struggle_mapping)
 
@@ -26,6 +30,7 @@ numeric_cols = [
     "Struggle_encoded",
     "Motivation",
     "Notification",
+    # "Gamefication",
     "Visual"
 ]
 print(data[numeric_cols].describe())
